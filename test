@@ -1,0 +1,22 @@
+// index.js (or App.js)
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+// Define a functional component
+function HelloWorld() {
+  return (
+    <div>
+      <h1>Hello from React!</h1>
+      <p>This is a simple functional component.</p>
+    </div>
+  );
+}
+
+// Get the root DOM element
+const container = document.getElementById('root');
+
+// Create a React root
+const root = ReactDOM.createRoot(container);
+
+// Render the component into the root
+root.render(<HelloWorld />);
